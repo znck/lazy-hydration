@@ -13,8 +13,6 @@ const io =
       })
     : null;
 
-if (isBrowser) window.io = io;
-
 export default {
   props: {
     onClick: Boolean,
