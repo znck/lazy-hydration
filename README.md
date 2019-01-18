@@ -69,6 +69,10 @@ documents the different options provided:
 </template>
 ```
 
+## Prior Art
+
+- [vue-lazy-hydration](https://github.com/maoberlehner/vue-lazy-hydration) by Markus Oberlehner
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
