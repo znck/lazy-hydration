@@ -33,7 +33,7 @@
   "scripts": {
     "pre:build": "rm -rf dist/",
     ":build": "rollup -c --environment BUILD:production",
-    "pre:release": "npm run :build",
+    "prepublishOnly": "npm run :build",
     ":release": "standard-version",
     "post:release": "git push --follow-tags origin master && npm publish",
     "release": "npm run :release"
