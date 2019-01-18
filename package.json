@@ -23,18 +23,27 @@
   },
   "homepage": "https://github.com/znck/lazy-hydration#readme",
   "devDependencies": {
-    "rollit": "^0.0.8"
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "rollup": "^1.1.0",
+    "rollup-plugin-babel": "^4.3.1",
+    "rollup-plugin-vue": "^4.6.1",
+    "vue-template-compiler": "^2.5.22"
   },
   "scripts": {
-    "build": "rollit Hydrate.vue",
-    "prerelease": "npm run build",
-    "release": "standard-version"
+    "pre:build": "rm -rf dist/",
+    ":build": "rollup -c --environment BUILD:production",
+    "pre:release": "npm run :build",
+    ":release": "standard-version",
+    "post:release": "git push --follow-tags origin master && npm publish",
+    "release": "npm run :release"
   },
   "files": [
-    "Hydrate.vue"
+    "Hydrate.vue",
+    "dist/"
   ],
-  "main": "dist/lazy-hydration.cjs.js",
-  "module": "dist/lazy-hydration.es.js",
-  "unpkg": "dist/lazy-hydration.js",
-  "browser": "dist/lazy-hydration.es.js"
+  "browserslist": "> 0.25%, not dead",
+  "main": "dist/lazy-hydration.ssr.js",
+  "module": "dist/lazy-hydration.js",
+  "browser": "Hydrate.vue"
 }
