@@ -1,0 +1,29 @@
+{
+  "name": "lazy-hydration",
+  "version": "0.0.0",
+  "description": "Lazy Hydration for Vue SSR",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/znck/lazy-hydration.git"
+  },
+  "keywords": [
+    "vue",
+    "lazy hydration",
+    "hydration",
+    "ssr"
+  ],
+  "main": "Hydrate.vue",
+  "author": "Rahul Kadyan <hi@znck.me> (https://znck.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/znck/lazy-hydration/issues"
+  },
+  "homepage": "https://github.com/znck/lazy-hydration#readme",
+  "devDependencies": {
+    "rollit": "^0.0.8"
+  },
+  "scripts": {
+    "build": "rollit Hydrate.vue",
+    "release": "standard-version -v"
+  }
+}
