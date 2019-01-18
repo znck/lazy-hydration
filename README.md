@@ -1,5 +1,5 @@
 <div class="text-xs-center" align="center" style="margin: 20px">
-  <img src="./logo.svg" height="255" alt="lazy-hydration">
+  <img src="./logo.png" height="255" alt="lazy-hydration">
 </div><br><br>
 
 <div class="text-xs-center" align="center">

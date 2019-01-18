@@ -12,8 +12,11 @@
     "hydration",
     "ssr"
   ],
-  "main": "Hydrate.vue",
-  "author": "Rahul Kadyan <hi@znck.me> (https://znck.me)",
+  "author": {
+    "name": "Rahul Kadyan",
+    "email": "hi@znck.me",
+    "url": "https://znck.me"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/znck/lazy-hydration/issues"
@@ -24,6 +27,14 @@
   },
   "scripts": {
     "build": "rollit Hydrate.vue",
+    "prerelease": "npm run build",
     "release": "standard-version"
-  }
+  },
+  "files": [
+    "Hydrate.vue"
+  ],
+  "main": "dist/lazy-hydration.cjs.js",
+  "module": "dist/lazy-hydration.es.js",
+  "unpkg": "dist/lazy-hydration.js",
+  "browser": "dist/lazy-hydration.es.js"
 }
