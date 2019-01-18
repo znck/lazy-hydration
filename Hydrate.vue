@@ -6,13 +6,14 @@ const io =
     ? new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting || entry.intersectionRatio > 0) {
-            entry.target.parentElement.hydrate && entry.target.parentElement.hydrate();
+            entry.target.parentElement.hydrate &&
+              entry.target.parentElement.hydrate();
           }
         });
       })
     : null;
 
-if (isBrowser) window.io = io
+if (isBrowser) window.io = io;
 
 export default {
   props: {
@@ -20,7 +21,8 @@ export default {
     onHover: Boolean,
     onInteraction: Boolean,
     whenVisible: Boolean,
-    whenIdle: Boolean
+    whenIdle: Boolean,
+    ssrOnly: Boolean
   },
   data: () => ({
     hydrated: !isBrowser
@@ -40,6 +42,7 @@ export default {
     }
   },
   mounted() {
+    if (this.ssrOnly) return;
     if (this.$el.childElementCount === 0) {
       this.hydrated = true;
 

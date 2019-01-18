@@ -65,6 +65,11 @@ documents the different options provided:
     <Hydrate when-idle>
       ...
     </Hydrate>
+
+    <!-- Only in SSR. -->
+    <Hydrate ssr-only>
+      ...
+    </Hydrate>
   </div>
 </template>
 ```
