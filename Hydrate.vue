@@ -42,12 +42,14 @@ export default {
     }
   },
   mounted() {
-    if (this.ssrOnly) return;
     if (this.$el.childElementCount === 0) {
+      // No SSR rendered content.
       this.hydrated = true;
 
       return;
     }
+
+    if (this.ssrOnly) return;
 
     if (this.whenIdle) {
       const id = requestIdleCallback(
