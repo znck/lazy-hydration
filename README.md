@@ -14,7 +14,6 @@
 
 Lazy hydration for Vue SSR.
 
-
 ## Usage
 
 ### Installation
@@ -41,13 +40,25 @@ documents the different options provided:
 ```html
 <template>
   <div>
+    <!-- Hydrate when user clicks. -->
     <Hydrate on-click>
       <MyComponent />
       <MyComponent />
       <MyComponent />
     </Hydrate>
 
+    <!-- Just in time hydration. When user hovers over content -->
     <Hydrate on-hover>
+      ...
+    </Hydrate>
+
+    <!-- Hydrate on any event -->
+    <Hydrate on="fullscreen">
+      ...
+    </Hydrate>
+
+    <!-- or events -->
+    <Hydrate :on="['fullscreen', 'mousedown']">
       ...
     </Hydrate>
 
@@ -70,9 +81,41 @@ documents the different options provided:
     <Hydrate ssr-only>
       ...
     </Hydrate>
+
+    <!-- Scheduled hydration. In 2s of initial render. -->
+    <Hydrate :with-delay="2000">
+      ...
+    </Hydrate>
+
+    <!-- Controlled hydration -->
+    <Hydrate :force="isItReady">
+      ...
+    </Hydrate>
   </div>
 </template>
 ```
+
+Programmatic approach:
+
+``` html
+<template>
+  <Hydrate ref="child">
+    ...
+  </Hydrate>
+</template>
+
+<script>
+export default {
+  methods: {
+    foo() {
+      this.$refs.child.hydrate()
+    }
+  }
+}
+</script>
+```
+
+> **NOTE:** Consider BETA until v1.0 release.
 
 ## Prior Art
 

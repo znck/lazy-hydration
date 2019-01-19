@@ -25,6 +25,7 @@ export default [
         file: pkg.main,
       },
     ],
+    external: ['@znck/prop-types']
   },
   {
     input: 'Hydrate.vue',
@@ -36,5 +37,6 @@ export default [
         file: pkg.module,
       },
     ],
+    external: ['@znck/prop-types']
   },
 ]

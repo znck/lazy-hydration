@@ -25,15 +25,27 @@
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
+    "@vue/server-test-utils": "^1.0.0-beta.28",
+    "@vue/test-utils": "^1.0.0-beta.28",
+    "@znck/prop-types": "^0.4.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.13.1",
     "rollup": "^1.1.0",
     "rollup-plugin-babel": "^4.3.1",
     "rollup-plugin-vue": "^4.6.1",
+    "vue": "^2.5.22",
+    "vue-jest": "^3.0.2",
+    "vue-server-renderer": "^2.5.22",
     "vue-template-compiler": "^2.5.22"
   },
   "scripts": {
+    "test": "jest",
     "pre:build": "rm -rf dist/",
     ":build": "rollup -c --environment BUILD:production",
     "prepublishOnly": "npm run :build",
+    "pre:release": "npm run test",
     ":release": "standard-version",
     "post:release": "git push --follow-tags origin master && npm publish",
     "release": "npm run :release"
@@ -45,5 +57,16 @@
   "browserslist": "> 0.25%, not dead",
   "main": "dist/lazy-hydration.ssr.js",
   "module": "dist/lazy-hydration.js",
-  "browser": "Hydrate.vue"
+  "browser": "Hydrate.vue",
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      ".*\\.(vue)$": "vue-jest",
+      "^.+\\.js$": "babel-jest"
+    }
+  }
 }
