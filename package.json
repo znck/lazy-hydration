@@ -1,6 +1,6 @@
 {
   "name": "lazy-hydration",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Lazy Hydration for Vue SSR",
   "repository": {
     "type": "git",
