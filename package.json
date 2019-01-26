@@ -27,7 +27,6 @@
     "@babel/preset-env": "^7.2.3",
     "@vue/server-test-utils": "^1.0.0-beta.28",
     "@vue/test-utils": "^1.0.0-beta.28",
-    "@znck/prop-types": "^0.4.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "jest": "^23.6.0",
@@ -68,5 +67,8 @@
       ".*\\.(vue)$": "vue-jest",
       "^.+\\.js$": "babel-jest"
     }
+  },
+  "dependencies": {
+    "@znck/prop-types": "^0.5.1"
   }
 }

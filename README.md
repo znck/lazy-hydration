@@ -14,6 +14,8 @@
 
 Lazy hydration for Vue SSR.
 
+> NOTE: This project uses [@znck/prop-types](https://github.com/znck/prop-types) which generates tree shakeable component prop definitions but it requires `process.env.NODE_ENV` to replaced with `"production"` to work effectively. See [@znck/prop-types](https://github.com/znck/prop-types#introduction)'s documentation to know more.
+
 ## Usage
 
 ### Installation

@@ -649,10 +649,10 @@
     dom-event-types "^1.0.0"
     lodash "^4.17.4"
 
-"@znck/prop-types@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@znck/prop-types/-/prop-types-0.4.0.tgz#4f368f90b8c55c60b0310a70d696c13fbc2260ad"
-  integrity sha512-rz849CdTcFK/PfN9+t9ZTkuxySCAe6H8TOalIXp+A2+DFESHSeqa2OZYmmHN7knBuUOsXodAp+1PlFJhmtC/Yg==
+"@znck/prop-types@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@znck/prop-types/-/prop-types-0.5.1.tgz#513260f133edb19214b26d8ed425cc3acaf31250"
+  integrity sha512-hrpJRKusXMhsef0yfkje9LIpdbZLfoDRfYR/tvUtCXOXOvWsyV5j537hLqKIvdqk6qn9xPqnI/22QMDqQUXGAw==
   dependencies:
     vue "2.*"
 
