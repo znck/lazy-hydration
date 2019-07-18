@@ -31,8 +31,6 @@ export default {
     hydrated: !isBrowser
   }),
   created() {
-    if (isBrowser) console.log('Is browser')
-    else  console.log('Is server')
     PropTypes.validate(() => {
       if (
         !this.on &&
