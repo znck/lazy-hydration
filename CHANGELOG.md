@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.2"></a>
+## [0.2.2](https://github.com/znck/lazy-hydration/compare/v0.2.1...v0.2.2) (2019-07-19)
+
+
+### Bug Fixes
+
+* Remove unnecessary console log  ([#6](https://github.com/znck/lazy-hydration/issues/6)) ([58a9cba](https://github.com/znck/lazy-hydration/commit/58a9cba))
+
+
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://github.com/znck/lazy-hydration/compare/v0.2.0...v0.2.1) (2019-01-26)
 
