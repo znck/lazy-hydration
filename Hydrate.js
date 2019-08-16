@@ -38,7 +38,7 @@ export default {
     hydrated: !isBrowser,
   }),
   created() {
-    PropTypes.validate(() => {
+    PropTypes.run(() => {
       if (
         !this.on &&
         !this.onClick &&
@@ -65,9 +65,6 @@ export default {
   },
   mounted() {
     if (this.$el.dataset.forceHydrate) {
-      PropTypes.validate(() => {
-        console.log('No SSR rendered content found. Force Hydrate.')
-      })
       // No SSR rendered content. Render now.
       this.hydrate()
 
@@ -115,7 +112,7 @@ export default {
       if (io) io.observe(el)
       else {
         withDelay = 2000
-        PropTypes.validate(() =>
+        PropTypes.run(() =>
           console.warn('IntersectionObserver polyfill is required.')
         )
       }

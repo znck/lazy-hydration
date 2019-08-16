@@ -7,6 +7,7 @@ function version(name) {
 }
 
 const banner = `
+/* eslint-disable */
 /**
  * ${pkg.name} v${pkg.version}
  * (c) ${new Date().getFullYear()} ${pkg.author.name} <${pkg.author.email}> (${
@@ -43,7 +44,9 @@ export default [
     plugins: [vue({
       normalizer: '~vue-runtime-helpers/dist/normalize-component.mjs',
       styleInjector: '~vue-runtime-helpers/dist/inject-style/browser.mjs',
-    }), babel()],
+    }), babel({
+      
+    })],
     output: [
       {
         banner,
