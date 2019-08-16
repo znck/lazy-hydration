@@ -2,13 +2,13 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import HomePage from './pages/index.vue'
-import WhenVisiblePage from './pages/when-visible.vue'
-import WhenIdlePage from './pages/when-idle.vue'
-import WithDelayPage from './pages/with-delay.vue'
-import SSROnlyPage from './pages/ssr-only.vue'
-import OnClickPage from './pages/on-click.vue'
-import OnHoverPage from './pages/on-hover.vue'
-import OnInteractionPage from './pages/on-interaction.vue'
+const WhenVisiblePage = createRoute(() => import('./pages/when-visible.vue'))
+const WhenIdlePage = createRoute(() => import('./pages/when-idle.vue'))
+const WithDelayPage = createRoute(() => import('./pages/with-delay.vue'))
+const SSROnlyPage = createRoute(() => import('./pages/ssr-only.vue'))
+const OnClickPage = createRoute(() => import('./pages/on-click.vue'))
+const OnHoverPage = createRoute(() => import('./pages/on-hover.vue'))
+const OnInteractionPage = createRoute(() => import('./pages/on-interaction.vue'))
 
 Vue.use(Router)
 
@@ -60,10 +60,10 @@ export function createRouter() {
   return new Router({ routes, mode: 'history' })
 }
 
-// function createRoute(fn) {
-//   return async () => {
-//     const result = await fn()
+function createRoute(fn) {
+  return async () => {
+    const result = await fn()
 
-//     return result.default
-//   }
-// }
+    return result.default
+  }
+}
