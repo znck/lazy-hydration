@@ -1,0 +1,7 @@
+build:
+  docker:
+    server: example/Dockefile
+
+run:
+  server:
+    image: server
