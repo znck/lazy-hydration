@@ -43,7 +43,7 @@
   "scripts": {
     "test": "jest",
     "dev": "node dist/ssr.js",
-    "build:demo": "npm run build && cd example && npm run build:image",
+    "build:demo": "npm run build && cd example && npm run build",
     "build": "npm run :build",
     "pre:build": "rm -rf dist/",
     ":build": "rollup -c --environment BUILD:production",

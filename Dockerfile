@@ -12,4 +12,4 @@ ADD example/dist/ /app/dist
 
 EXPOSE 8080
 
-ENTRYPOINT ["node", "dist/ssr.js"]
+CMD ["node", "dist/ssr.js"]
