@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/znck/lazy-hydration/compare/v1.0.0...v1.0.1) (2019-08-16)
+
+
+### Bug Fixes
+
+* Include Hydrate.js file in published bundle ([c27d186](https://github.com/znck/lazy-hydration/commit/c27d186))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/znck/lazy-hydration/compare/v0.2.2...v1.0.0) (2019-08-16)
 
