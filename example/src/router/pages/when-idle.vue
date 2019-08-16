@@ -31,7 +31,7 @@ export default {
 <style module>
 .banner {
   margin: 0 auto;
-  width: 600px;
+  max-width: 600px;
   padding: 24px;
 }
 

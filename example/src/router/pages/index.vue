@@ -35,14 +35,14 @@ export default {
 
     <hr :class="$style.separator" />
 
-    
+
   </main>
 </template>
 
 <style module>
 .container {
-  width: 600px;
   margin: 24px auto;
+  max-width: 600px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
