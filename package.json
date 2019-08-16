@@ -59,10 +59,9 @@
     "dist/"
   ],
   "browserslist": "> 0.25%, not dead",
-  "main": "dist/lazy-hydration.ssr.js",
+  "main": "dist/lazy-hydration.cjs.js",
   "module": "dist/lazy-hydration.js",
-  "browser": "Hydrate.vue",
-  "types": "Hydrate.vue.d.ts",
+  "types": "Hydrate.d.ts",
   "jest": {
     "moduleFileExtensions": [
       "js",

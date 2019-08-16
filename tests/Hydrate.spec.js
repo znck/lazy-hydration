@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import { renderToString } from '@vue/server-test-utils'
 import { shallowMount } from '@vue/test-utils'
-import Hydrate from '../Hydrate.vue'
+import Hydrate from '../Hydrate'
 
 function createComponent(onHydration) {
   return {
