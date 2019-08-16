@@ -1,6 +1,6 @@
 {
   "name": "lazy-hydration",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Lazy Hydration for Vue SSR",
   "repository": {
     "type": "git",
@@ -54,7 +54,7 @@
     "release": "npm run :release"
   },
   "files": [
-    "Hydrate.vue.d.ts",
+    "Hydrate.d.ts",
     "Hydrate.js",
     "dist/"
   ],
