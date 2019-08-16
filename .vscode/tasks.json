@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Component",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", ":build"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "label": "Build Example",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "build"],
+      "options": {
+        "cwd": "${workspaceFolder}/example"
+      }
+    },
+    {
+      "label": "Start Example Server",
+      "type": "shell",
+      "command": "node",
+      "args": [
+        "${workspaceFolder}/example/dist/ssr.js"
+      ],
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Build Component",
+        "Build Example"
+      ]
+    }
+  ]
+}

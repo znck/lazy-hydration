@@ -1,6 +1,6 @@
 import { Component } from 'vue'
 
-const Hydrate: Component<
+declare const Hydrate: Component<
   { hydrated: boolean },
   { hydrate(): void },
   {},
