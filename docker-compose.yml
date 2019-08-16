@@ -1,7 +1,7 @@
 version: '3'
 services:
-  server:
-    image: lazy-hydration/demo
+  web:
+    image: registry.heroku.com/lazy-hydration/web
     build:
       context: .
     ports:

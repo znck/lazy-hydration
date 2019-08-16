@@ -1,3 +1,3 @@
 import { createApp } from '@/app'
 
-createApp().app.$mount('#app', true)
+createApp().app.$mount('#app')

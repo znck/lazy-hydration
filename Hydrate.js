@@ -33,7 +33,7 @@ export default {
     withDelay: PropTypes.number,
     ssrOnly: PropTypes.bool,
     force: PropTypes.bool,
-  },  
+  },
   data: () => ({
     hydrated: !isBrowser,
   }),
@@ -161,10 +161,16 @@ export default {
     },
   },
   render(h) {
+    const firstChild = () => {
+      const children = this.$scopedSlots.default
+      ? this.$scopedSlots.default({ hydrated: this.hydrated })
+      : this.$slots.default
+
+      return Array.isArray(children) ? children[0] : children
+    }
+
     const vnode = this.hydrated
-      ? this.$scopedSlots.default
-        ? this.$scopedSlots.default({ hydrated: this.hydrated })[0]
-        : this.$slots.default[0]
+      ? firstChild()
       : h('div', clientSideDivData)
 
     vnode.asyncFactory = this.hydrated ? asyncFactoryResolved : asyncFactory

@@ -60,10 +60,10 @@ export function createRouter() {
   return new Router({ routes, mode: 'history' })
 }
 
-function createRoute(fn) {
-  return async () => {
-    const result = await fn()
+// function createRoute(fn) {
+//   return async () => {
+//     const result = await fn()
 
-    return result.default
-  }
-}
+//     return result.default
+//   }
+// }

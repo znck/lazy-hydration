@@ -41,7 +41,8 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "npm run build && cd example && npm run build && node dist/ssr.js",
+    "dev": "node dist/ssr.js",
+    "build:demo": "npm run build && cd example && npm run build:image",
     "build": "npm run :build",
     "pre:build": "rm -rf dist/",
     ":build": "rollup -c --environment BUILD:production",
@@ -53,6 +54,7 @@
   },
   "files": [
     "Hydrate.vue.d.ts",
+    "Hydrate.js",
     "Hydrate.vue",
     "dist/"
   ],

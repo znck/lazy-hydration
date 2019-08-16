@@ -10,7 +10,7 @@
   "scripts": {
     "build": "npm run build:client && npm run build:server",
     "build:server": "rollup -c",
-    "build:client": "vue build src/csr.js",
+    "build:client": "NODE_ENV=development vue build src/csr.js",
     "build:image": "docker-compose build",
     "run:dev": "npm run build && docker-compose build && docker-compose up"
   },
