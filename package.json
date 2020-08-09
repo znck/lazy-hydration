@@ -22,12 +22,15 @@
     "url": "https://github.com/znck/lazy-hydration/issues"
   },
   "homepage": "https://github.com/znck/lazy-hydration#readme",
+  "dependencies": {
+    "@znck/prop-types": "^0.6.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.2.3",
+    "@rollup/plugin-node-resolve": "^8.4.0",
     "@vue/server-test-utils": "^1.0.0-beta.29",
     "@vue/test-utils": "^1.0.0-beta.29",
-    "@znck/prop-types": "^0.6.3",
     "jest": "^24.9.0",
     "jest-environment-jsdom": "^24.9.0",
     "postcss": "^7.0.17",
