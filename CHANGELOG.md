@@ -1,6 +1,13 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.0.5](https://github.com/znck/lazy-hydration/compare/v1.0.4...v1.0.5) (2020-08-09)
+
+
+### Bug Fixes
+
+* add @znck/prop-types as dependency ([db00d49](https://github.com/znck/lazy-hydration/commit/db00d49c080136ea0282414459abb0227277bd46)), closes [#10](https://github.com/znck/lazy-hydration/issues/10)
 
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/znck/lazy-hydration/compare/v1.0.3...v1.0.4) (2019-08-16)
