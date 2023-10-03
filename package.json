@@ -33,7 +33,7 @@
     "@vue/test-utils": "^1.0.0-beta.29",
     "jest": "^24.9.0",
     "jest-environment-jsdom": "^24.9.0",
-    "postcss": "^7.0.17",
+    "postcss": "^8.4.31",
     "regenerator-runtime": "^0.13.1",
     "rollup": "^1.19.4",
     "rollup-plugin-babel": "^4.3.1",
